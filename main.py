@@ -2,6 +2,8 @@ from flask import Flask,request
 from recoggraph import recogbase64
 from predictbaseline import predictbaseline
 from predictKOBE import perdictkobe
+import os
+os.chdir("/home/ubuntu/KOBE")
 app = Flask(__name__)
 baselinemodel = predictbaseline()
 kobemodel = perdictkobe()
